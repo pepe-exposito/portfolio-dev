@@ -1,10 +1,30 @@
 ---
+import LinkedInIcon from '../icons/LinkedIn.astro'
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Badge from "../components/Badge.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44 ">
+			<img class="rounded-full w-12 h-12"
+				 src="https://media.licdn.com/dms/image/D4E03AQG7MOPdlGReQw/profile-displayphoto-shrink_800_800/0/1685796072929?e=2147483647&v=beta&t=we43nB6i5NDk2TF306UaafuELthM7HaMdQFzzR_0s48"
+				 alt="Pepe foto">
+			<h1 class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"> Hey, soy Pepe
+				<a href="https://www.linkedin.com/in/jos%C3%A9-exp%C3%B3sito-%C3%A1vila-437b0314b/?originalSubdomain=es"
+				   target="_blank" rel="noopener" class="justify-center items-center"><Badge> Desarrollador para VorticeSoft </Badge> </a>
+			</h1>
+			<h2 class="text-2xl text-wrap"> Programador con un año de experiencia en el desarrollo web. De Córdoba, España. </h2>
+
+			<ul>
+				<li>
+					<a href="https://www.linkedin.com/in/jos%C3%A9-exp%C3%B3sito-%C3%A1vila-437b0314b/?originalSubdomain=es">
+						<LinkedInIcon class="w-6 h-6"/>
+						LinkedIn
+					</a>
+				</li>
+			</ul>
+		</section>
 	</main>
 </Layout>
 
